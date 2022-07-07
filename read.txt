@@ -1,0 +1,5 @@
+tenha instalado o NodeJS e insomnia
+
+rode o arquivo index.js com o Node pelo terminal ou prompt de comando
+
+use o insomnia para fazer as 4 funções de um CRUD básico
