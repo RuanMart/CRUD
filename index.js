@@ -6,7 +6,7 @@ const nomes = ["Lucas", "Marcos", "Maria"];
 
 // retorna um só nome
 
-server.get("/cursos/index", (req, res) => {
+server.get("/nomes/index", (req, res) => {
 	const { index } = req.params;
 
 	return res.json(nomes[index]);
@@ -14,13 +14,13 @@ server.get("/cursos/index", (req, res) => {
 
 // retorna todos os nomes
 
-server.get("/cursos/index", (req, res) => {
+server.get("/nomes/index", (req, res) => {
 	return res.json(nomes);
 });
 
 // cria um novo nome
 
-nomes.post("/cursos/index", (req, res) => {
+nomes.post("/nomes/index", (req, res) => {
 	const { name } = req.body;
 
 	cursos.push(name);
@@ -30,7 +30,7 @@ nomes.post("/cursos/index", (req, res) => {
 
 // atualiza um nome
 
-server.put("/cursos/index", (req, res) => {
+server.put("/nomes/index", (req, res) => {
 	const { index } = req.params;
 
 	const { name } = req.body;
@@ -42,7 +42,7 @@ server.put("/cursos/index", (req, res) => {
 
 // deleta um nome
 
-server.delete("/cursos/index", (req, res) => {
+server.delete("/nomes/index", (req, res) => {
 	const { index } = req.params;
 
 	nomes.splice(index, 1);
